@@ -101,7 +101,7 @@
                     </div>
                     @can('post-super-list')
                         <div class="user">
-                            <p class="name">Użytkownik</p>
+                            <p class="name">User</p>
                             <div class="buttons">
                                 @foreach ($users as $user)
                                     @if (isset($selected_users) && in_array($user->toArray(), $selected_users))
@@ -120,7 +120,7 @@
                         </div>
                     @endcan
                     <div class="filter-button show_results">
-                        <p>Zastosuj filtry</p>
+                        <p>Apply filters</p>
                     </div>
                     <form style="display: none" id="filter_form">
                         <input type="text" id="term" name="q" value="{{ $terms ?? '' }}">

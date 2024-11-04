@@ -26,11 +26,11 @@
             @endisset
 
             @isset($data['password'])
-                <p><b>Hasło:</b> {{ $data['password'] }}</p>
+                <p><b>Password:</b> {{ $data['password'] }}</p>
             @endisset
             
             @isset($data['rola'])
-                <p><b>Rola: </b> {{ $data['rola'] }}</p>
+                <p><b>Role: </b> {{ $data['rola'] }}</p>
             @endisset
             
         </div>

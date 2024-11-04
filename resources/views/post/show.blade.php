@@ -41,7 +41,7 @@
             <div class="actions">
                 @isset($nextPost)
                     <a href="{{ route('home') }}"><i class="fa-solid fa-arrow-left"></i> Return to home page</a>
-                    <a href="{{ route('post.show', $nextPost->slug) }}">Następny post <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="{{ route('post.show', $nextPost->slug) }}">Next post <i class="fa-solid fa-arrow-right"></i></a>
                 @else
                     <a href="{{ route('home') }}" style="width: 100%"><i class="fa-solid fa-arrow-left"></i> Return to home page</a>
                 @endisset
@@ -56,7 +56,7 @@
                     <input type="text" name="name" autocomplete="off" value="{{ Auth::User() ? Auth::User()->firstname . ' ' . Auth::User()->lastname : '' }}">
                     <label>Text</label>
                     <textarea name="body"></textarea>
-                    <input type="submit" value="Dodaj">
+                    <input type="submit" value="Add">
                 </form>
             </div>
             <div class="line-1"></div>

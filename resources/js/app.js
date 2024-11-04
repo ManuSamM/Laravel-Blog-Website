@@ -5,13 +5,13 @@ import './theme';
 window.confirmDelete = function(id, name){
     Swal.fire({
         title: 'Are you sure?',
-        text: "Nie będziesz mógł tego przywrócić!",
+        text: "You won't be able to get it back!",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Tak, usuń!',
-        cancelButtonText: 'Anuluj'
+        confirmButtonText: 'Yes, delete!',
+        cancelButtonText: 'Cancel'
         }).then((result) => {
             if (result.isConfirmed) {
                 document.getElementById(name + '_' + id).submit();

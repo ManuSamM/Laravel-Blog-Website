@@ -3,8 +3,8 @@
 
     <div class="dashboard">
         <div class="role">
-            <div class="welcome-2">Rola: {{ $role->name }}</div>
-            <p class="role_label_2">Uprawnienia</p>
+            <div class="welcome-2">Role: {{ $role->name }}</div>
+            <p class="role_label_2">Right</p>
             <div class="role_list">
                 @php
                     $last_label = '';

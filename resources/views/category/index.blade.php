@@ -17,19 +17,19 @@
                     <div class="buttons sort_buttons">
                         <div class="filter-button" onclick="filterCheck(1);" data-order="desc">
                             <div class="dot"><i class="fa-solid fa-circle-dot"></i></div>
-                            <p>ID malejąco</p>
+                            <p>ID descending</p>
                         </div>
                         <div class="filter-button active" onclick="filterCheck(2);"  data-order="asc">
                             <div class="dot"><i class="fa-solid fa-circle-check"></i></div>
-                            <p>ID rosnąco</p>
+                            <p>ID ascending</p>
                         </div>
                         <div class="filter-button" onclick="filterCheck(3);" data-order="ascAlphabetical">
                             <div class="dot"><i class="fa-solid fa-circle-dot"></i></div>
-                            <p>Alfabetycznie rosnąco</p>
+                            <p>Alphabetically ascending</p>
                         </div>
                         <div class="filter-button" onclick="filterCheck(4);" data-order="descAlphabetical">
                             <div class="dot"><i class="fa-solid fa-circle-dot"></i></div>
-                            <p>Alfabetycznie malejąco</p>
+                            <p>Alphabetical descending</p>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="filter-button show_results">
-                    <p>Zastosuj filtry</p>
+                    <p>Apply filters</p>
                 </div>
                 <form style="display: none" id="filter_form">
                     <input type="text" id="term" name="q" value="{{ $terms ?? '' }}">
@@ -75,12 +75,12 @@
                 <thead>
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Nazwa</th>
-                    <th scope="col">Tło</th>
-                    <th scope="col">Kolor</th>
-                    <th scope="col">Podgląd</th>
-                    <th scope="col">Ilość postów</th>
-                    <th scope="col">Akcje</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Background Color</th>
+                    <th scope="col">Color</th>
+                    <th scope="col">Preview</th>
+                    <th scope="col">Number of posts</th>
+                    <th scope="col">Shares</th>
                 </tr>
                 </thead>
                 <tbody class="body_user_list">

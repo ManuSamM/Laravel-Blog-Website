@@ -23,7 +23,7 @@ class CreateWriterUserSeeder extends Seeder
             'password' => bcrypt('writer1234'),
         ]);
 
-        $role = Role::create(['name' => 'Pisarz']);
+        $role = Role::create(['name' => 'Writer']);
 
         $permissions = [
             '5' => 5,

@@ -9,7 +9,7 @@
     <div class="images">
         <div class="filter">
             <div class="filtr_collapse">
-                <p class="head">Obrazy</p>
+                <p class="head">Pictures</p>
                 <i class="fa-solid fa-caret-up button_collapse"></i>
             </div>
             <div class="filtr_body">
@@ -18,35 +18,35 @@
                     <div class="buttons sort_buttons">
                         <div class="filter-button" onclick="filterCheck(1);" data-order="asc">
                             <div class="dot"><i class="fa-solid fa-circle-dot"></i></div>
-                            <p>Alfabetycznie nazwa rosnąco</p>
+                            <p>Alphabetical name in ascending order</p>
                         </div>
                         <div class="filter-button" onclick="filterCheck(2);" data-order="desc">
                             <div class="dot"><i class="fa-solid fa-circle-check"></i></div>
-                            <p>Alfabetycznie nazwa malejąco</p>
+                            <p>Alphabetical name descending</p>
                         </div>
                         <div class="filter-button" onclick="filterCheck(3);" data-order="ascAlphabetical">
                             <div class="dot"><i class="fa-solid fa-circle-dot"></i></div>
-                            <p>Alfabetycznie uniqid rosnąco</p>
+                            <p>Alphabetically uniqid ascending</p>
                         </div>
                         <div class="filter-button" onclick="filterCheck(4);" data-order="descAlphabetical">
                             <div class="dot"><i class="fa-solid fa-circle-dot"></i></div>
-                            <p>Alfabetycznie uniqid malejąco</p>
+                            <p>Alphabetically uniqid descending</p>
                         </div>
                         <div class="filter-button" onclick="filterCheck(5);" data-order="ascSize">
                             <div class="dot"><i class="fa-solid fa-circle-dot"></i></div>
-                            <p>Rozmiar rosnąco</p>
+                            <p>Size ascending</p>
                         </div>
                         <div class="filter-button" onclick="filterCheck(6);" data-order="descSize">
                             <div class="dot"><i class="fa-solid fa-circle-dot"></i></div>
-                            <p>Rozmiar malejąco</p>
+                            <p>Size descending</p>
                         </div>
                         <div class="filter-button" onclick="filterCheck(7);" data-order="ascUsage">
                             <div class="dot"><i class="fa-solid fa-circle-dot"></i></div>
-                            <p>Użycia rosnąco</p>
+                            <p>Usage ascending</p>
                         </div>
                         <div class="filter-button active" onclick="filterCheck(8);" data-order="descUsage">
                             <div class="dot"><i class="fa-solid fa-circle-dot"></i></div>
-                            <p>Użycia malejąco</p>
+                            <p>Usage descending</p>
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
                     </div>
                 </div>
                 <div class="extensions">
-                    <p class="name">Rozszerzenie</p>
+                    <p class="name">Enlargement</p>
                     <div class="buttons">
                         @foreach ($extensions as $extension => $count)
                             @if (isset($selected_extensions_array) && in_array($extension, $selected_extensions_array))
@@ -114,7 +114,7 @@
                     </div>
                 </div>
                 <div class="duplicates">
-                    <p class="name">Duplikaty</p>
+                    <p class="name">Duplicates</p>
                     <div class="buttons">
                         <div class="checkbox" onclick="selectDuplicates('yes');" data-duplicates="yes">
                             <div class="check"><i class="{{ isset($duplicates) ? ($duplicates[0] === '1' ? 'fa-solid fa-square-check' : 'fa-regular fa-square') : 'fa-regular fa-square' }}"></i></div>
@@ -127,7 +127,7 @@
                     </div>
                 </div>
                 <div class="filter-button show_results">
-                    <p>Zastosuj filtry</p>
+                    <p>Apply filters</p>
                 </div>
                 <form style="display: none" id="filter_form">
                     <input type="text" id="term" name="q" value="{{ $terms ?? '' }}">
@@ -177,11 +177,11 @@
                 <p class="directory"><i class="fa-solid fa-folder"></i> na</p>
                 <div class="filename">na</div>
                 <div class="size"><i class="fa-solid fa-database"></i> 0</div>
-                <div class="usage_count"><i class="fa-solid fa-recycle"></i> Użyto: <span>0</span></div>
+                <div class="usage_count"><i class="fa-solid fa-recycle"></i> Used: <span>0</span></div>
                 @can('image-delete')
                     <button class="button" onclick="deleteImage(event);" data-name="na">Delete <i class="fa-solid fa-trash" aria-hidden="true"></i></button>
                 @endcan
-                <div class="use_info">Użycia:</div>
+                <div class="use_info">Uses:</div>
                 <div class="used">
                     <div class="post">
                         <img src="" alt="">

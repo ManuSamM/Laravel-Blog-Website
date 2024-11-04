@@ -9,7 +9,7 @@
     <header class="header_post_edit">
         <a href="{{ route('posts.index') }}"><i class="fa-solid fa-left-long"></i> Return</a>
         <div class="edit_post_actions">
-            <a href="{{ route('history.index', $post->id) }}" class="history"><span class="text">Historia</span><span class="icon"><i class="fa-solid fa-timeline"></i></span></a>
+            <a href="{{ route('history.index', $post->id) }}" class="history"><span class="text">History</span><span class="icon"><i class="fa-solid fa-timeline"></i></span></a>
             <div class="submit" onClick="submitForm();"><span class="text">Publish</span><span class="icon"><i class="fa-solid fa-upload"></i></span></div>
         </div>
         <div class="profile">
@@ -60,7 +60,7 @@
 
                 <div class="actions">
                     <a><i class="fa-solid fa-arrow-left"></i> Return to home page</a>
-                    <a>Następny post <i class="fa-solid fa-arrow-right"></i></a>
+                    <a>Next post <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
             <div class="post_options">

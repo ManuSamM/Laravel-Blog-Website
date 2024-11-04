@@ -377,7 +377,7 @@ window.categoriesToggle = function () {
         toggleButton.innerHTML = 'Rozwiń <i class="fa-solid fa-chevron-down"></i>';
     } else {
         visibleCategories = true;
-        toggleButton.innerHTML = 'Ukryj <i class="fa-solid fa-chevron-up"></i>';
+        toggleButton.innerHTML = 'Hide <i class="fa-solid fa-chevron-up"></i>';
     }
 
     categories.classList.toggle('active');

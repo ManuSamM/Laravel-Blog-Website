@@ -14,11 +14,11 @@
                         @endforeach
                     </ul>
                 @endif
-                <label>Nazwa</label>
+                <label>Name</label>
                 <input type="text" name="name" autocomplete="off" value="{{ $category->name }}">
-                <label>Tło</label>
+                <label>Background Color</label>
                 <input type="text" name="backgroundColor" autocomplete="off" value="{{ $category->backgroundColor }}">
-                <label>Kolor</label>
+                <label>Color</label>
                 <input type="text" name="textColor" autocomplete="off" value="{{ $category->textColor }}">
                 <input type="submit" value="Edit">
             </div>

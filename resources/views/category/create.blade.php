@@ -13,13 +13,13 @@
                 </ul>
             @endif
             <div class="body_form">
-                <label>Nazwa</label>
+                <label>Name</label>
                 <input type="text" name="name" autocomplete="off">
-                <label>Tło</label>
+                <label>Background Color</label>
                 <input type="text" name="backgroundColor" autocomplete="off">
-                <label>Kolor</label>
+                <label>Color</label>
                 <input type="text" name="textColor" autocomplete="off">
-                <input type="submit" value="Utwórz">
+                <input type="submit" value="Create">
             </div>
         </form>
     </div>

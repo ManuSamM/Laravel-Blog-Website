@@ -17,11 +17,11 @@
                     <div class="buttons sort_buttons">
                         <div class="filter-button active" onclick="filterCheck(1);" data-order="desc">
                             <div class="dot"><i class="fa-solid fa-circle-check"></i></div>
-                            <p>Najnowsze</p>
+                            <p>Latest</p>
                         </div>
                         <div class="filter-button" onclick="filterCheck(2);" data-order="asc">
                             <div class="dot"><i class="fa-solid fa-circle-dot"></i></div>
-                            <p>Najstarsze</p>
+                            <p>Oldest</p>
                         </div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div class="filter-button show_results">
-                    <p>Zastosuj filtry</p>
+                    <p>Apply filters</p>
                 </div>
                 <form style="display: none" id="filter_form">
                     <input type="text" id="term" name="q" value="{{ $terms ?? '' }}">
@@ -67,9 +67,9 @@
                 <thead>
                     <tr>
                         <th scope="col">ID</th>
-                        <th scope="col">Nazwa</th>
-                        <th scope="col">Użytkowników</th>
-                        <th scope="col" width="30%">Akcje</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Users</th>
+                        <th scope="col" width="30%">Shares</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -14,13 +14,13 @@
                         @endforeach
                     </ul>
                 @endif
-                <label>Imię</label>
+                <label>Name</label>
                 <input type="text" name="firstname" autocomplete="off" value="{{ $user->firstname }}">
-                <label>Nazwisko</label>
+                <label>Last name</label>
                 <input type="text" name="lastname" autocomplete="off" value="{{ $user->lastname }}">
                 <label>Email</label>
                 <input type="email" name="email" autocomplete="off" value="{{ $user->email }}">
-                <label>Uprawnienia</label>
+                <label>Right</label>
                 <select name="roles">
                     @isset($roles)
                         @foreach ($roles as $role)
@@ -32,10 +32,10 @@
                         @endforeach
                     @endisset
                 </select>
-                <label>Hasło</label>
+                <label>Password</label>
                 <div id="password_gen">
                     <input type="text" name="password" autocomplete="off">
-                    <div class="button" onClick="generatePassword();">Generuj</div>
+                    <div class="button" onClick="generatePassword();">Generate</div>
                 </div>
                 <label>Mail</label>
                 <div class="mail">

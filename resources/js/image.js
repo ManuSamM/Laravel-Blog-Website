@@ -117,7 +117,7 @@ window.deleteImage = function (event) {
         confirmButtonColor: "#3085d6",
         cancelButtonColor: "#d33",
         confirmButtonText: "Potwiedzam, usuń!",
-        cancelButtonText: "Anuluj",
+        cancelButtonText: "Cancel",
     }).then((result) => {
         if (result.isConfirmed) {
             const imageName = event.target.dataset.name;

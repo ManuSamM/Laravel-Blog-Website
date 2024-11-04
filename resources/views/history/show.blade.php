@@ -6,7 +6,7 @@
     <header class="header_post_edit">
         <a href="{{ route('history.index', $id) }}"><i class="fa-solid fa-left-long"></i> Return</a>
         <span class="leave-compare" onclick="leaveCompare();">Opuść porównanie</span>
-        <span class="info">Historia posta</span>
+        <span class="info">Post history</span>
         <div class="profile">
             <img src="{{ asset(Auth::user()->image_path) }}" alt="" class="profile_img">
             <i class="fa-solid fa-angles-down"></i>

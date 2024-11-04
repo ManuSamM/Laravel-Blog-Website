@@ -8,7 +8,7 @@
     <div class="users">
         <div class="filter">
             <div class="filtr_collapse">
-                <p class="head">Użytkownicy</p>
+                <p class="head">Users</p>
                 <i class="fa-solid fa-caret-up button_collapse"></i>
             </div>
             <div class="filtr_body">
@@ -17,11 +17,11 @@
                     <div class="buttons sort_buttons">
                         <div class="filter-button active" onclick="filterCheck(1);" data-order="desc">
                             <div class="dot"><i class="fa-solid fa-circle-check"></i></div>
-                            <p>Najnowsze</p>
+                            <p>Latest</p>
                         </div>
                         <div class="filter-button" onclick="filterCheck(2);" data-order="asc">
                             <div class="dot"><i class="fa-solid fa-circle-dot"></i></div>
-                            <p>Najstarsze</p>
+                            <p>Oldest</p>
                         </div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div class="roles_filtr">
-                    <p class="name">Rola</p>
+                    <p class="name"></p>
                     <div class="buttons">
                         @foreach ($roles as $role)
                             @if (isset($selected_roles_array) && in_array($role->id, $selected_roles_array))
@@ -71,7 +71,7 @@
                     </div>
                 </div>
                 <div class="filter-button show_results">
-                    <p>Zastosuj filtry</p>
+                    <p>Apply filters</p>
                 </div>
                 <form style="display: none" id="filter_form">
                     <input type="text" id="term" name="q" value="{{ $terms ?? '' }}">
@@ -87,10 +87,10 @@
                     <tr>
                         <th scope="col">IMG</th>
                         <th scope="col">Name</th>
-                        <th scope="col">Nazwisko</th>
+                        <th scope="col">Last name</th>
                         <th scope="col">Email</th>
-                        <th scope="col">Rola</th>
-                        <th scope="col" style="width:125px;">Akcje</th>
+                        <th scope="col"></th>
+                        <th scope="col" style="width:125px;">Shares</th>
                     </tr>
                 </thead>
                 <tbody class="body_user_list">
@@ -100,7 +100,7 @@
                             <td data-label="Imię">{{ $user->firstname }}</td>
                             <td data-label="Nazwisko">{{ $user->lastname }}</td>
                             <td data-label="Email">{{ $user->email }}</td>
-                            <td data-label="Rola">
+                            <td data-label="">
                                 @if(!empty($user->getRoleNames()))
                                     @foreach($user->getRoleNames() as $v)
                                         <span>{{ $v }}</span>

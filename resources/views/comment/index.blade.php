@@ -81,7 +81,7 @@
                         </div>
                     @endrole
                     <div class="filter-button show_results">
-                        <p>Zastosuj filtry</p>
+                        <p>Apply filters</p>
                     </div>
                     <form style="display: none" id="filter_form">
                         <input type="text" id="term" name="q" value="{{ $term ?? '' }}">

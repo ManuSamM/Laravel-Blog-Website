@@ -4,7 +4,7 @@
         <div class="highlighted_icon">Featured <i class="fa-solid fa-star"></i></div>
     @endif
     <img src="{{ asset($post->image_path) }}" alt="{{ $post->title }}">
-    <div class="read"><i class="fa-solid fa-angles-right"></i>Przeczytaj</div>
+    <div class="read"><i class="fa-solid fa-angles-right"></i>Read it</div>
     <div class="body">
         <div class="top-info">
             @if ($post->category)

@@ -83,7 +83,7 @@ function addPostTiles(data) {
 
         const readDiv = document.createElement("div");
         readDiv.className = "read";
-        readDiv.innerHTML = `<i class="fa-solid fa-angles-right" aria-hidden="true"></i>Przeczytaj`;
+        readDiv.innerHTML = `<i class="fa-solid fa-angles-right" aria-hidden="true"></i>Read it`;
 
         const bodyContainer = document.createElement("div");
         bodyContainer.className = "body";

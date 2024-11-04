@@ -220,7 +220,7 @@ window.revert = function (postId, historyId) {
         confirmButtonColor: "#3085d6",
         cancelButtonColor: "#d33",
         confirmButtonText: "Tak, przywróć!",
-        cancelButtonText: "Anuluj",
+        cancelButtonText: "Cancel",
     }).then((result) => {
         if (result.isConfirmed) {
             window.location.href =
