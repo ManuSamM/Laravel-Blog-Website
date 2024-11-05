@@ -56,7 +56,7 @@ class PostSavedController extends Controller
             'read_time' => $this->calculateReadTime($request->body),
         ]);
 
-        return response()->json(['message' => 'Zapisano!', 'id' => $post->id]);
+        return response()->json(['message' => 'Saved!', 'id' => $post->id]);
     }
 
     /**
@@ -100,7 +100,7 @@ class PostSavedController extends Controller
 
         $SavedPost->update($input);
 
-        return response()->json(['message' => 'zapisano']);
+        return response()->json(['message' => 'Saved']);
     }
 
     /**

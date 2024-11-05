@@ -37,11 +37,11 @@
         <div class="back"><i class="fa-solid fa-angles-left"></i> <p>Return</p></div>
         @if (count($notifications) === 0)
             <div class="notification action">
-                <p class="empty">Brak powiadomień</p>
+                <p class="empty">No notifications</p>
             </div>
         @else
             <div class="notification action">
-                <div class="clear_notifications" onclick="clearNotifications();">Wyczyść powiadomienia</div>
+                <div class="clear_notifications" onclick="clearNotifications();">Clear notifications</div>
             </div>
         @endif
         @php
@@ -56,9 +56,9 @@
                 $formattedDate = '';
 
                 if ($notificationDate->isToday()) {
-                    $formattedDate = 'Dziś';
+                    $formattedDate = 'Today';
                 } elseif ($notificationDate->isYesterday()) {
-                    $formattedDate = 'Wczoraj';
+                    $formattedDate = 'Yesterday';
                 } else {
                     $formattedDate = $notificationDate->format('d.m.Y');
                 }
@@ -70,7 +70,7 @@
                 @php
                     $class = null;
                     switch($notification->data['type']) {
-                        case "SUKCES":
+                        case "SUCCESS":
                             $class = " success";
                             break;
                         case "INFO":

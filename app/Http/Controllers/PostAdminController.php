@@ -273,7 +273,7 @@ class PostAdminController extends Controller
             $SavedPost->delete();
         }
 
-        Auth::User()->notify(new PostNotification('SUKCES', 'Utworzono post!', "/post/$post->slug"));
+        Auth::User()->notify(new PostNotification('SUCCESS', 'Post Created!', "/post/$post->slug"));
 
         return redirect()->route('posts.index');
     }

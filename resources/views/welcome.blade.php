@@ -3,7 +3,7 @@
         @vite(['resources/js/loadPosts.js'])
     @endsection
     <div class="article">
-        <div class="image__container{{ $highlighted_posts->isEmpty() ? '' : ' highlighted' }}">
+        <!-- <div class="image__container{{ $highlighted_posts->isEmpty() ? '' : ' highlighted' }}">
             @if($highlighted_posts->isEmpty())
                 <div class="text">
                     <p>Welcome to the blog!</p>
@@ -41,7 +41,7 @@
                     <i class="dot fa-regular fa-circle" onclick="currentSlide({{$i+1}});"></i>
                 @endfor
             </div>
-        </div>
+        </div> -->
 
         <div class="container">
             <div class="posts">
