@@ -17,7 +17,7 @@
                     @endif
                     <p class="date">{{ $post->created_at->format('d.m.Y') }} by {{ $post->user->firstname . ' ' . $post->user->lastname }}</p>
                     @if($post->created_at != $post->updated_at)
-                        <p class="date">Zaktualizowano: {{ $post->updated_at->format('d.m.Y') }}</p>
+                        <p class="date">Updated: {{ $post->updated_at->format('d.m.Y') }}</p>
                     @endif
                     @if($post->is_published == false)
                         <p class="date">(Nie widoczne)</p>
